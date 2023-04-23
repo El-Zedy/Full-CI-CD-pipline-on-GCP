@@ -9,7 +9,7 @@ steps:
   args: ['push', 'gcr.io/$PROJECT_ID/gcrproject2']
 
   # deploy the container image to GKE
-- name: 'gcr.io/cloud-builders/simple-python-app'
+- name: 'gcr.io/cloud-builders/gke-deploy'
   args:
     - run
     - --filename=app-deployment.yml
