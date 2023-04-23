@@ -1,3 +1,6 @@
 # Docker flask application
-- Application written in python
-- It shall be deployed on GKE
+- Simple application written in python
+- Using `Cloud Build` as a Serverless CI/CD Platform
+- Using `Artifact Registry` to manage application container image
+- Deployment will be on `GKE`
+![Project Diagram](Diagram.png)
