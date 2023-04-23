@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: simple-python-app
@@ -16,7 +16,7 @@ spec:
       - name: app-container
         image: gcr.io/moelzedy/gcrproject2:latest
         ports:
-        - containersPort: 5000
+        - containerPort: 5000
         env:
           - name: PORT
             value: "5000"
