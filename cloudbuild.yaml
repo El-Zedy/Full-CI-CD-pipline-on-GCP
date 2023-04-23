@@ -1,5 +1,6 @@
 steps:
 
+  # name line ==> Docker images that will be used as the build environment for executing the build steps
   # build the container image
 - name: "gcr.io/cloud-builders/docker"
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/gcrproject2', '.']
