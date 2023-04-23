@@ -20,3 +20,19 @@ spec:
         env:
           - name: PORT
             value: "5000"
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name:  python-app-service
+  namespace: gcp-project2
+spec:
+  selector:
+    app: python
+  type:  LoadBalancer
+  ports:
+  - protocol: "TCP"
+    port:  80
+    targetPort:  5000
+
