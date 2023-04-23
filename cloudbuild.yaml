@@ -3,18 +3,18 @@ steps:
   # name line ==> Docker images that will be used as the build environment for executing the build steps
   # build the container image
 - name: "gcr.io/cloud-builders/docker"
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/gcrproject2', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/gcrproject2-dev', '.']
 
   # push the container image
 - name : 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$PROJECT_ID/gcrproject2']
+  args: ['push', 'gcr.io/$PROJECT_ID/gcrproject2-dev']
 
   # deploy the container image to GKE
 - name: 'gcr.io/cloud-builders/gke-deploy'
   args:
     - run
     - --filename=app-deployment.yml
-    - --image=gcr.io/$PROJECT_ID/gcrproject2
+    - --image=gcr.io/$PROJECT_ID/gcrproject2-dev
     - --location=us-central1-c
     - --cluster=project2-cluster
-    - --namespace=gcp-project2
+    - --namespace=gcp-project2-dev
