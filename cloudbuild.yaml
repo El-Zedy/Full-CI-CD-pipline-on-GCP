@@ -14,6 +14,6 @@ steps:
     - run
     - --filename=app-deployment.yml
     - --image=gcr.io/$PROJECT_ID/gcrproject2
-    - --location=us-us-central1-c
+    - --location=us-central1-c
     - --cluster=project2-cluster
     - --namespace=gcp-project2
