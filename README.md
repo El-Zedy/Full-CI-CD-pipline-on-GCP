@@ -22,9 +22,9 @@
 ![Project Diagram](screenshots/Deployment_process_using_the_Development_Environment.png)
 - Set up a GKE cluster with two namespaces one for prod and another for dev
 - Creating a deployment and service file for our application
-- Set up our Triggers one for the main branch which is a production env and the dev beanch as a development env
+- Set up our Triggers one for the main branch which is a production env and one for the dev branch as a development env
 ![Project Diagram](screenshots/triggers.png)
-- Write our `cloudbuild.yml` files which be triggered when any change happened at our two environments
+- Write our `cloudbuild.yml` files which will be triggered when any change happened at our two environments
 - development environment trigger
 ![Project Diagram](screenshots/dev_env_trigger.png)
 - Production environment trigger
@@ -39,7 +39,8 @@ Contributions to this project are welcome and appreciated. To contribute, please
 3. Make your changes and commit them to your branch.
 4. Create a pull request to merge your changes into the main branch.
 # Conclusion
-In conclusion, this repository serves as a demonstration of how to create an automated CI/CD using cloud build and GKE on GCP. By following the instructions in this repository, you can learn how to : 
+In conclusion, this repository serves as a demonstration of how to create an automated CI/CD pipline using cloud build and GKE on GCP.
+By following the instructions in this repository, you can learn how to : 
 - Containerize a simple application written in python
 - Using `Cloud Build` as a Serverless CI/CD Platform to automate our cycle
 - Using `Build Triggers` to run our CI/CD when Main and Dev branches have modified
@@ -49,7 +50,7 @@ In conclusion, this repository serves as a demonstration of how to create an aut
 ## Acknowledgements
 We would like to acknowledge the following individuals and resources for their contributions to this project:
 
-- Our instructor Raghunandana Sanur, for providing guidance and support throughout the project.
+- My instructors on [KodeKloud](https://github.com/kodekloudhub), for providing guidance and support throughout the project.
 - The Google Cloud Platform documentation, which served as a valuable resource for understanding the various GCP services and how they can be used together.
 ## Contact
 If you have any questions or suggestions regarding this project, please contact the project owner at muhammadhassanelzedy@gmail.com .
