@@ -20,14 +20,14 @@
 - Create Dockerfile for our project and test a container from it locally to make sure that we are on the right way
 - Pushing our code to the GitHub repo and create `dev branch` as our development environment
 ![Project Diagram](screenshots/Deployment_process_using_the_Development_Environment.png)
-- Set up a GKE cluster with two namespaces one for prod and another for dev
-- Creating a deployment and service file for our application
+- Set up a GKE cluster with two namespaces one for `prod` and another for `dev`
+- Creating a deployment and loadblancer service file for our application
 - Set up our Triggers one for the main branch which is a production env and one for the dev branch as a development env
 ![Project Diagram](screenshots/triggers.png)
 - Write our `cloudbuild.yml` files which will be triggered when any change happened at our two environments
-- development environment trigger
+- **development environment trigger**
 ![Project Diagram](screenshots/dev_env_trigger.png)
-- Production environment trigger
+- **Production environment trigger**
 ![Project Diagram](screenshots/prod_env_trigger.png)
 - Validating our work by accessing our loadblancer endpoint to check that everything works as excepected.
 - Finally our project works well and available for users! :tada::tada:
