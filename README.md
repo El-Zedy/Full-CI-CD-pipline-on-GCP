@@ -2,7 +2,7 @@
 
 - Containerize a simple application written in python
 - Using `Cloud Build` as a Serverless CI/CD Platform to automate our cycle
-- Using `Build Triggers` to run our CI/CD when Main and Dev branches have modified
+- Using `Build Triggers` to run our CI/CD when main and dev branches have been modified
 - Using `Artifact Registry` to manage application container image
 - Deployment will be on `GKE`
 - Apply DevOps best practices by setting up a development environment
