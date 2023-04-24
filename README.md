@@ -7,7 +7,7 @@
 - Deployment will be on `GKE`
 - Apply DevOps best practices by setting up a development environment
 
-![Project Diagram](Diagram.png)
+![Project Diagram](screenshots/Diagram.png)
 
 ## Prerequisites:
 - Linux
