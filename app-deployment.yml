@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app-container
-        image: gcr.io/moelzedy/gcrproject2:latest
+        image: gcr.io/moelzedy/gcrproject2-dev:latest
         ports:
         - containerPort: 5000
         env:
@@ -26,7 +26,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name:  python-app-service
-  namespace: gcp-project2
+  namespace: gcp-project2-dev
 spec:
   selector:
     app: python
