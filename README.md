@@ -25,10 +25,15 @@
 - Set up our Triggers one for the main branch which is a production env and one for the dev branch as a development env
 ![Project Diagram](screenshots/triggers.png)
 - Write our `cloudbuild.yml` files which will be triggered when any change happened at our two environments
-- **development environment trigger**
+---
+- **Development environment trigger**
+
 ![Project Diagram](screenshots/dev_env_trigger.png)
 - **Production environment trigger**
+
 ![Project Diagram](screenshots/prod_env_trigger.png)
+
+---
 - Validating our work by accessing our loadblancer endpoint to check that everything works as excepected.
 - Finally our project works well and available for users! :tada::tada:
 ![Project Diagram](screenshots/accessing_lp_endpoint.png)
